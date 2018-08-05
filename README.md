@@ -1,7 +1,7 @@
 # bwoestman.com
 This project is a testbed for new technology and a place to learn by doing.
 
-## Technology in use:
+## Technology:
 * React
 * WebPack
 
