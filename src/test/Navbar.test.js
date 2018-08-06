@@ -2,7 +2,6 @@ import React from "react";
 import ShallowRenderer from "react-test-renderer/shallow";
 
 import Navbar from "../navbar/Navbar";
-import NavModalButton from "../navbar/NavModalButton";
 
 let renderer;
 let result;
@@ -21,12 +20,12 @@ it("is a nav element", () => {
 it("has the correct title", () => {});
 
 it("contains three children", () => {
-  expect(result.props.children).toHaveLength(3);
+  expect(result.props.children).toHaveLength(2);
 });
 
 it("contain Logo with title, Login button & Sign Up button", () => {
   expect(result.props.children[0].type).toBe("a");
   expect(result.props.children[0].props.children).toEqual(title);
-  expect(result.props.children[1].props.title).toEqual("Login");
-  expect(result.props.children[2].props.title).toEqual("Sign Up");
+  expect(result.props.children[1].props.children[0].props.title).toEqual("Login");
+  expect(result.props.children[1].props.children[1].props.title).toEqual("Sign Up");
 });
