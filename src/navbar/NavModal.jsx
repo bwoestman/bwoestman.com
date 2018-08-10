@@ -1,26 +1,8 @@
 import * as React from "react";
 
-function NavModalButton(props)
-{
-    return (
-        <div>
-            <button
-                type="button"
-                className="btn btn-primary"
-                data-toggle="modal"
-                data-target={"#" + props.dataTarget}
-            >
-                {props.children}
-                <span className="align-middle">{props.title}</span>
-            </button>
-            <NavModal id={props.dataTarget} title={props.title} verify={props.verify}/>
-        </div>
-    );
-}
-
 function NavModal(props)
 {
-    let passwordVerification = "";
+    let passwordVerification = null;
     if (props.verify)
     {
         passwordVerification = (
@@ -106,4 +88,4 @@ function NavModal(props)
     );
 }
 
-export default NavModalButton;
+export default NavModal;

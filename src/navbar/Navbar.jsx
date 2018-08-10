@@ -1,13 +1,9 @@
 import * as React from "react";
-import NavModalButton from "./NavModalButton";
+import NavButton from "./NavButton";
 import { FaSignInAlt } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 
 class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <nav className="navbar navbar-dark bg-primary">
@@ -15,17 +11,18 @@ class Navbar extends React.Component {
           {this.props.title}
         </a>
         <div className="row justify-content-end">
-          <NavModalButton dataTarget="loginModal" title="Login">
+          <NavButton dataTarget="loginModal" title="Login" modal="true">
             <FaSignInAlt className="align-middle" />
-          </NavModalButton>
+          </NavButton>
 
-          <NavModalButton
+          <NavButton
             dataTarget="signUpModal"
             title="Sign Up"
+            modal="true"
             verify="true"
           >
             <FaUserPlus className="align-middle" />
-          </NavModalButton>
+          </NavButton>
         </div>
       </nav>
     );
