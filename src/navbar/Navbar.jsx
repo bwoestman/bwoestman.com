@@ -14,15 +14,6 @@ class Navbar extends React.Component {
           <NavButton dataTarget="loginModal" title="Login" modal="true">
             <FaSignInAlt className="align-middle" />
           </NavButton>
-
-          <NavButton
-            dataTarget="signUpModal"
-            title="Sign Up"
-            modal="true"
-            verify="true"
-          >
-            <FaUserPlus className="align-middle" />
-          </NavButton>
         </div>
       </nav>
     );
