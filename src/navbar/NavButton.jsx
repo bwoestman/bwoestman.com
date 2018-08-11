@@ -2,13 +2,13 @@ import * as React from "react";
 import NavModal from "./NavModal";
 
 function NavButton(props) {
-  let navModal = null;
+  let navModal;
   if (props.modal === "true") {
     navModal = (
       <NavModal
         id={props.dataTarget}
         title={props.title}
-        verify={props.verify}
+        passwordVerification={props.passwordVerification}
       />
     );
   }

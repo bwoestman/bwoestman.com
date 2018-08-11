@@ -3,7 +3,7 @@ import * as React from "react";
 function NavModal(props)
 {
     let passwordVerification = null;
-    if (props.verify)
+    if (props.passwordVerification)
     {
         passwordVerification = (
             <div className="form-group">
