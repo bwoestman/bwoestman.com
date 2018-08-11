@@ -14,9 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit":"yarn test --ci --coverage --notify --verbose"
+    "precommit": "yarn test --ci --coverage --notify --verbose"
   },
   "devDependencies": {
     "git-pre-commit": "^2.1.4"
