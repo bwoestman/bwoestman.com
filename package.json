@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit":"CI=true yarn test"
+    "precommit":"yarn test --ci --coverage --notify --verbose"
   },
   "devDependencies": {
     "git-pre-commit": "^2.1.4"
